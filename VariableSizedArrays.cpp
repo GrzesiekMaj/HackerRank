@@ -39,10 +39,10 @@ int main() {
         QueryArray.clear();
     }
 
-    while(OrderArray.size()!=0)
+    //while(OrderArray.size()!=0)
+    for(int i=0; i<OrderArray.size(); i++)
     {
-        cout<<DataArray[OrderArray[0][0]][OrderArray[0][1]]<<endl; //print first row and erase it
-        OrderArray.erase(OrderArray.begin());
+        cout<<DataArray[OrderArray[i][0]][OrderArray[i][1]]<<endl;
     }
     return 0;
 }
